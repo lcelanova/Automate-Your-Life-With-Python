@@ -1,11 +1,16 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
 import pandas as pd
 
 website = "https://www.coindesk.com/livewire/"
 path = '/usr/local/bin/chromedriver'
+
+#headless mode
+options = Options()
+options.headless = True
 s=Service(executable_path=path)
-driver = webdriver.Chrome(service=s)
+driver = webdriver.Chrome(service=s, options=options)
 
 driver.get(website)
 
