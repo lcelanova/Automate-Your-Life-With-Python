@@ -60,3 +60,7 @@ def automating_excel(file_name):
 #automating 2021:
 automating_excel('sales_2021.xlsx')
 automating_excel('sales_2022.xlsx')
+
+#automating months
+automating_excel('sales_january.xlsx')
+automating_excel('sales_february.xlsx')
